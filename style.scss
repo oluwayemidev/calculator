@@ -1,0 +1,72 @@
+$color1: #7AB1FF;
+$color2: #9380FF;
+$color3: #6EFFE0;
+$color4: #FFC96E;
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background: white;
+}
+.container{
+    background: rgb(48, 48, 48);
+    height: 650px;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    padding: 50px 30px;
+}
+.display{
+    width: 100%;
+    height: 100px;
+    background: rgb(150, 150, 150);
+    border: none;
+    border-bottom: solid 5px black;
+    padding: 20px;
+    font-size: 40px;
+    text-align: right;
+}
+.display::placeholder{
+    color: black;
+}
+.buttons{
+    display: inline-grid;
+    grid-template-columns: 80px 80px 80px 150px;
+    grid-gap: 20px 16px;
+    padding-top: 20px;
+}
+input[type=button]{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background: white;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+input[type=button]:first-child{
+    background: red;
+    color: white;
+}
+input[type=button]:nth-child(2){
+    background-color: $color4;
+}
+input[type=button]:nth-child(16){
+    grid-row: 4;
+    grid-row-end: 6;
+    grid-column: 4;
+    background-color: $color2;
+    color: white;
+    font-size: 50px;
+}
+input[type=button]:nth-child(16):hover{
+    background-color: #3d3377;
+    transition: background 0.5s;
+}
+.sample{
+    color: white;
+}
